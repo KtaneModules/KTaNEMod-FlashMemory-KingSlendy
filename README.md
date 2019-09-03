@@ -1,1 +1,1 @@
-Flash Memory regular module for KTaNE
+Flash Memory regular module for KTaNE.
