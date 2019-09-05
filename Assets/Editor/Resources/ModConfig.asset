@@ -14,8 +14,13 @@ MonoBehaviour:
   id: FlashMemory
   title: Flash Memory
   author: KingSlendy, Lumbud84
-  description: "Implemented by: KingSlendy\r\nOriginal idea made by: Lumbud84\n\nmoduleID:
-    FlashMemory\n\nManual HTML: https://ktane.timwi.de/HTML/Flash%20Memory.html\nManual
+  description: "A very easy defuser-oriented module where you have to repeat a sequence
+    of squares back after only seeing them for one second. The module consists of
+    four stages, with 3, 5, 7, and 9 squares respectively.\r\n\r\nEstimated Difficulty:
+    1/10 (very easy for defuser / effortless for expert)\r\n\r\nWhile the whole \"four
+    stages\" thing might seem off-putting, the module could take as little as 10-20
+    seconds to completely solve.\n\nImplemented by: KingSlendy\r\nOriginal idea made
+    by: Lumbud84\n\nmoduleID: FlashMemory\n\nManual HTML: https://ktane.timwi.de/HTML/Flash%20Memory.html\nManual
     PDF: https://ktane.timwi.de/PDF/Flash%20Memory.pdf"
   version: 1.0
   outputFolder: Build

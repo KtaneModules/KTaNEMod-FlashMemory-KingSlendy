@@ -142,20 +142,19 @@ public class Scr_FlashMemory : MonoBehaviour {
     }
 
 #pragma warning disable 414
-    private readonly string TwitchHelpMessage = @"!{0} press A1 B3 C5... (column [A to D] and row [1 to 4] to press) | !{0} bolt (presses the lightning bolt button)";
+    private readonly string TwitchHelpMessage = @"!{0} press A1 B3 C5... (column [A to D] and row [1 to 5] to press) | !{0} bolt (presses the lightning bolt button)";
 #pragma warning restore 414
 
     KMSelectable[] ProcessTwitchCommand(string command) {
         command = command.ToLowerInvariant().Trim();
 
-        if (Regex.IsMatch(command, @"^press +[a-d1-4^, |&]+$")) {
+        if (Regex.IsMatch(command, @"^press +[a-d1-5^, |&]+$")) {
             command = command.Substring(6).Trim();
-
             var presses = command.Split(new[] { ',', ' ', '|', '&' }, StringSplitOptions.RemoveEmptyEntries);
             var pressList = new List<KMSelectable>();
 
-            for (int i = 0; i < presses.Length; i++) {
-                if (Regex.IsMatch(presses[i], @"^[a-d][1-4]$")) {
+            for (var i = 0; i < presses.Length; i++) {
+                if (Regex.IsMatch(presses[i], @"^[a-d][1-5]$")) {
                     var setPress = presses[i][0] - 'a' + (4 * (presses[i][1] - '1'));
                     pressList.Add(ModuleButtons[setPress]);
                 }

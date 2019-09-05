@@ -20161,12 +20161,13 @@ MonoBehaviour:
   AudioClips:
   - {fileID: 8300000, guid: d15f316e10558984d9c4c1bc0948fb3b, type: 3}
   - {fileID: 8300000, guid: 2812115fd6048614eb16570c64d9210c, type: 3}
+  - {fileID: 8300000, guid: ad61fd0c38246914db6ffc9778f37a13, type: 3}
   StrikeCount: 3
   TimeLimit: 600
   BombSize: 1
   FrontFaceOnly: 1
   EdgeworkConfiguration: {fileID: 0}
-  TwitchPlaysActive: 0
+  TwitchPlaysActive: 1
   TwitchPlaysMode: 0
   turnSpeed: 128
   panSpeed: 4
